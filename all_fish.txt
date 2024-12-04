@@ -1,0 +1,19 @@
+import openpyxl
+from openpyxl import Workbook, load_workbook
+
+#load an excel sheet
+book = load_workbook(filename = r'\\spatialfiles.bcgov\work\srm\nel\Local\Geomatics\Workarea\mcunning\Script_Folder_Marina\FSW_Objectives_Copy.xlsx')
+
+#printsheetnames to verify
+print(book.sheetnames)
+
+#create new sheets that extract specific data
+sheet1 = book.create_sheet("ALL_FISH_SENSITIVE_WS_POLY_ID", 0)
+
+#View specific data (put a specific sheet into a variable)
+all_fish = book.active
+
+#Get the worksheets in the file
+sheet.append
+
+book.save (filename = r'\\spatialfiles.bcgov\work\srm\nel\Local\Geomatics\Workarea\mcunning\Script_Folder_Marina\FSW_Objectives_Copy_Python.xlsx')
